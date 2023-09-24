@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product List</title>
+</head>
+<body>
+    <h1>Danh sách sản phẩm</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="role : ${role}">
+                <td th:text="${role.role_id}"></td>
+                <td th:text="${role.role_name}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
